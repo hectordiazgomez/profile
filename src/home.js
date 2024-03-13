@@ -4,23 +4,65 @@ const Home = () => {
     return (
         <>
         <div className="flex">
-<div className="w-1/4 py-6 flex justify-center">
-                    <p className="text-lg text-blue-600 font-semibold hover:text-blue-700">Hector Diaz</p>
+<div className="w-1/2 2xl:w-1/4 py-10 flex justify-center">
+                    <p className="text-2xl text-blue-600 font-semibold hover:text-blue-700">Hector Diaz</p>
 </div>
-<div className="w-1/2">
+<div className="2xl:w-1/2">
 
 </div>
-<div className="w-1/4 py-6">
-<a href="" target="_blank" className="text-lg text-blue-600 font-semibold hover:text-blue-700 cursor-pointer">Linkedin</a>
+<div className="w-1/2 2xl:w-1/4 py-10">
+                    <a href="https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" target="_blank" className="text-lg bg-blue-600 rounded-xl px-5 py-2 text-white font-semibold  cursor-pointer">Linkedin</a>
 </div>
+        </div>
+            <div className="bg-[url('https://luya.blob.core.windows.net/edux/bg_profile.jpg')] w-full h-48 object-cover">
         </div>
         <div className="flex justify-center">
-<div className="w-11/12 sm:w-4/5">
-<p>Hector Alberto Diaz Gomez</p>
-<p>Programming, autonomus agents and economics</p>
-<p className="italic">In that order</p>
+<div className="w-11/12 sm:w-3/5 2xl:w-5/12">
+<p className="text-3xl font-semibold pt-10 text-blue-800">Hector Alberto Diaz Gomez</p>
+<p className="text-blue-800 text-xl font-semibold pt-6">AI & Economics</p>
+<p className="font-semibold text-lg pt-3">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
 </div>
         </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
+                    <p className="text-xl font-semibold pt-10">Staff I make:</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
+                    <a href="https://github.com/hectordiazgomez/yumi_translator" target="_blank" className="font-semibold hover:underline text-blue-700">A language translator from Spanish into Awajun</a>
+                    <p className="text-sm text-blue-900">The repository contains the code and resources for training a sequence-to-sequence model to translate from Spanish to Awajun, an indigenous language spoken in the Peruvian Amazon.</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
+                    <a href="https://konlap.com/" target="_blank" className="font-semibold hover:underline text-blue-700">Konlap: A cross-language search engine</a>
+                    <p className="text-sm text-blue-900">Find information from different languages</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
+                    <a href="https://luia.app/" target="_blank" className="font-semibold hover:underline text-blue-700">LuIA: Get ready for the Duolingo English Test</a>
+                    <p className="text-sm text-blue-900">Trusted by thousands of students worldwide to get ready for the Duolingo English Test, an English certification test widely accepted worldwide.</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
+                    <a href="https://vortix.io/" target="_blank" className="font-semibold hover:underline text-blue-700">Vortex</a>
+                    <p className="text-sm text-blue-900">An academic search engine to find, chat and extract relevant academic information from English academic sources</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
+                    <p className="text-xl font-semibold pt-10">B2G projects:</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
+                    <a href="https://play.google.com/store/apps/details?id=com.amazonas.app" target="_blank" className="font-semibold hover:underline text-blue-700">Amazonas Travel Mark</a>
+                    <p className="text-sm text-blue-900">A mobile app developed for the Regional Government of Amazonas after a public bid</p>
+                </div>
+            </div>
         </>
     );
 }
