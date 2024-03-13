@@ -55,8 +55,8 @@ const Home = () => {
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
-                    <a href="https://vortix.io/" target="_blank" className="font-semibold hover:underline text-blue-700">Babel Project</a>
-                    <p className="text-sm text-blue-900">Based on my experience creating a language translator I am creating a no code tool to train language translator from scratch just by uploading sentence pair datasets and setting some configurations.</p>
+                    <a href="https://babelproject.io/" target="_blank" className="font-semibold hover:underline text-blue-700">Babel Project</a>
+                    <p className="text-sm text-blue-900">Based on my experience creating a language translator, now I am creating a no code tool to train language translators from scratch just by uploading sentence pair datasets and setting some configurations.</p>
                 </div>
             </div>
             <div className="flex justify-center">
