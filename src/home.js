@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa"
 
 const Home = () => {
     return (
@@ -63,6 +64,19 @@ const Home = () => {
                     <p className="text-sm text-blue-900">A mobile app developed for the Regional Government of Amazonas after a public bid</p>
                 </div>
             </div>
+        <div className="flex justify-center">
+<div className="py-8 w-3/4 2xl:w-1/4">
+<div className="flex justify-center">
+                        <p className="pb-3">Lets stay in touch</p>
+</div>
+                    <div className="flex justify-evenly">
+                        <a href="https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" target="_blank" ><FaLinkedin href="https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" target="_blank" className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
+                        <a href="https://github.com/hectordiazgomez" target="_blank"><FaGithub className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
+                        <a href="https://www.youtube.com/@hectoralbertodiazgomez3490" target="_blank"><FaYoutube className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
+                        <a href="https://twitter.com/HctorAlber2763?t=R6-urnekzZXFxf3jNNJsOw&s=09" target="_blank"><FaTwitter className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
+                    </div>
+</div>
+        </div>
         </>
     );
 }
