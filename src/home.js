@@ -5,23 +5,28 @@ const Home = () => {
     return (
         <>
         <div className="flex">
-<div className="w-1/2 2xl:w-1/4 py-10 flex justify-center">
+<div className="w-1/2 2xl:w-1/3 py-10 flex justify-center">
                     <p className="text-2xl text-blue-600 font-semibold hover:text-blue-700">Hector Diaz</p>
 </div>
-<div className="2xl:w-1/2">
+<div className="2xl:w-1/4">
 
 </div>
-<div className="w-1/2 2xl:w-1/4 py-10">
-                    <a href="https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" target="_blank" className="text-lg bg-blue-600 rounded-xl px-5 py-2 text-white font-semibold  cursor-pointer">Linkedin</a>
+<div className="w-1/2 flex justify-evenly items-center 2xl:w-1/4 py-10">
+                    <a href="https://github.com/hectordiazgomez" target="_blank"><FaGithub className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
+                    <a href="https://www.youtube.com/@hectoralbertodiazgomez3490" target="_blank"><FaYoutube className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
+                    <a href="https://twitter.com/HctorAlber2763?t=R6-urnekzZXFxf3jNNJsOw&s=09" target="_blank"><FaTwitter className="w-5 h-auto text-gray-700 cursor-pointer hover:text-gray-800" /></a>
 </div>
         </div>
-            <div className="bg-[url('https://luya.blob.core.windows.net/edux/bg_profile.jpg')] w-full h-48 object-cover">
+            <div className="bg-[url('https://luya.blob.core.windows.net/edux/nebulosa.jpg')] w-full h-48 object-cover">
         </div>
         <div className="flex justify-center">
 <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
-<p className="text-3xl font-semibold pt-10 text-blue-800">Hector Alberto Diaz Gomez</p>
-<p className="text-blue-800 text-xl font-semibold pt-6">AI & Economics</p>
-<p className="font-semibold text-lg pt-3">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
+<a className="flex pt-10 items-center">
+                        <img src="https://luya.blob.core.windows.net/edux/hector_profile.jpeg" className="w-1/6 h-auto rounded-full mr-5" />
+                        <p className="text-3xl font-semibold text-blue-800">Hector Alberto Diaz Gomez</p>
+</a>
+<p className="text-blue-800 text-xl font-semibold pt-6">Machine Translation, Web Search & Economics</p>
+                    <p className="font-semibold text-justify text-lg pt-3">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
 </div>
         </div>
             <div className="flex justify-center">
@@ -31,31 +36,31 @@ const Home = () => {
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
-                    <a href="https://github.com/hectordiazgomez/yumi_translator" target="_blank" className="font-semibold hover:underline text-blue-700">A language translator from Spanish into Awajun</a>
-                    <p className="text-sm text-blue-900">The repository contains the code and resources for training a sequence-to-sequence model to translate from Spanish to Awajun, an indigenous language spoken in the Peruvian Amazon.</p>
+                    <a href="https://github.com/hectordiazgomez/yumi_translator" target="_blank" className="font-semibold flex items-center hover:underline text-blue-700"> A language translator from Spanish into Awajun</a>
+                    <p className="text-sm text-justify text-blue-900">The repository contains the code and resources for training a sequence-to-sequence model to translate from Spanish to Awajun, an indigenous language spoken in the Peruvian Amazon.</p>
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
-                    <a href="https://konlap.com/" target="_blank" className="font-semibold hover:underline text-blue-700">Konlap: A cross-language search engine</a>
-                    <p className="text-sm text-blue-900">Find information from different languages</p>
+                    <a href="https://konlap.com/" target="_blank" className="font-semibold flex items-center hover:underline text-blue-700">  <img src="https://konlap.com/_next/static/image/public/webstore.1d33f5319b640ab544993bbc9d4dbe50.png?imwidth=128" className="w-7 h-auto mr-3" /> Konlap: A cross-language search engine</a>
+                    <p className="text-sm text-justify text-blue-900">Find information in +100 languages</p>
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
-                    <a href="https://luia.app/" target="_blank" className="font-semibold hover:underline text-blue-700">LuIA: Get ready for the Duolingo English Test</a>
-                    <p className="text-sm text-blue-900">Trusted by thousands of students worldwide to get ready for the Duolingo English Test, an English certification test widely accepted worldwide.</p>
+                    <a href="https://luia.app/" target="_blank" className="font-semibold hover:underline text-blue-700 flex items-center"> <img src="https://luya.blob.core.windows.net/edux/luialogo.png" className="w-7 h-auto mr-3" />  LuIA: Get ready for the Duolingo English Test</a>
+                    <p className="text-sm text-justify text-blue-900">Trusted by thousands of students worldwide to get ready for the Duolingo English Test, a low cost English certification test widely accepted worldwide.</p>
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
-                    <a href="https://vortix.io/" target="_blank" className="font-semibold hover:underline text-blue-700">Vortex</a>
-                    <p className="text-sm text-blue-900">An academic search engine to find, chat and extract relevant academic information from English academic sources</p>
+                    <a href="https://vortix.io/" target="_blank" className="font-semibold hover:underline text-blue-700 flex items-center"> <img src="https://luya.blob.core.windows.net/edux/vortex_logo.png" className="w-7 h-auto mr-3" /> Vortex</a>
+                    <p className="text-sm text-justify text-blue-900">An academic search engine to find, chat and extract relevant academic information from English academic sources</p>
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
-                    <a href="https://babelproject.io/" target="_blank" className="font-semibold hover:underline text-blue-700">Babel Project</a>
+                    <a href="https://babelproject.io/" target="_blank" className="font-semibold hover:underline text-blue-700 flex items-center"> <img src="https://luya.blob.core.windows.net/edux/tower.svg" className="w-7 h-auto mr-3" /> Babel Project</a>
                     <p className="text-sm text-blue-900">Based on my experience creating a language translator, now I am creating a no code tool to train language translators from scratch just by uploading sentence pair datasets and setting some configurations.</p>
                 </div>
             </div>
