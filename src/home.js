@@ -37,7 +37,7 @@ const Home = () => {
             <div className="flex justify-center">
                 <div className="w-11/12 rounded hover:bg-blue-50 cursor-pointer border-blue-200 border p-3 my-6 sm:w-3/5 2xl:w-5/12">
                     <a href="https://github.com/hectordiazgomez/yumi_translator" target="_blank" className="font-semibold flex items-center hover:underline text-blue-700"> A language translator from Spanish into Awajun</a>
-                    <p className="text-sm text-justify text-blue-900">The repository contains the code and resources for training a sequence-to-sequence model to translate from Spanish to Awajun, an indigenous language spoken in the Peruvian Amazon.</p>
+                    <p className="text-sm text-justify text-blue-900">A language translator with two versions, the first one was developed using a sequence to sequence model, and the second one used Meta NLLB to train a language translator from Spanish to Awajun, an indigenous language spoken in the Peruvian Amazon.</p>
                 </div>
             </div>
             <div className="flex justify-center">
