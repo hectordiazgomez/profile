@@ -32,7 +32,7 @@ const Home = () => {
         </div>
             <div className="flex justify-center">
                 <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
-                    <p className="text-xl font-semibold pt-10">Staff I make:</p>
+                    <p className="text-xl font-semibold pt-10">Stuff I make:</p>
                 </div>
             </div>
             <div className="flex justify-center">
