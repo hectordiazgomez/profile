@@ -23,8 +23,8 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <div className="bg-[url('https://luya.blob.core.windows.net/edux/nebulosa.jpg')] w-full h-96 object-cover relative">
-                <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="bg-[url('https://luya.blob.core.windows.net/edux/nebulosa.jpg')] w-full h-96">
+                <div className=""></div>
             </div>
             <div className="flex justify-center">
                 <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
@@ -44,7 +44,7 @@ const Home = () => {
             {[
                 {
                     title: "A language translator from Spanish into Awajun",
-                    description: "A language translator with two versions, the first one was developed using a sequence to sequence model, and the second one used Meta NLLB to train a language translator from Spanish to Awajun, an indigenous language spoken in the Peruvian Amazon.",
+                    description: "A language translator between Awajun and Spanish trained from scratch. The first version was trained using a sequence to sequence architecture, and the second model was trained using Meta NLLB. Awajun is an indigenous language spoken in northern Peru.",
                     websiteLink: "https://github.com/hectordiazgomez/yumi_translator",
                 },
                 {
@@ -62,7 +62,7 @@ const Home = () => {
                 },
                 {
                     title: "Vortex",
-                    description: "An academic search engine to find, chat and extract relevant academic information from English academic sources",
+                    description: "An academic search engine to find, chat and extract relevant academic information from English academic sources. Breaking language barriers for non-English speakers and making academic search more interactive than ever.",
                     websiteLink: "https://vortix.io/",
                     googlePlayLink: "https://play.google.com/store/apps/details?id=com.vortexai.mobile",
                     logo: "https://luya.blob.core.windows.net/edux/vortex_logo.png",
@@ -74,7 +74,7 @@ const Home = () => {
                     logo: "https://luya.blob.core.windows.net/edux/tower.svg",
                 },
             ].map((project, index) => (
-                <div key={index} className={`flex justify-center ${index % 2 === 0 ? 'bg-blue-50' : 'bg-white'}`}>
+                <div key={index} className={`flex justify-center ${index % 2 === 0 ? 'bg-white' : 'bg-white'}`}>
                     <div className="w-11/12 rounded border-blue-200 border-2 p-5 my-8 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
                         <a href={project.websiteLink} target="_blank" className="font-bold flex items-center hover:underline text-blue-600 text-2xl">
                             {project.logo && <img src={project.logo} className="w-8 h-auto mr-4" />}
@@ -99,10 +99,10 @@ const Home = () => {
                     <p className="text-3xl font-bold pt-12">B2G projects:</p>
                 </div>
             </div>
-            <div className="flex justify-center bg-blue-50">
+            <div className="flex justify-center ">
                 <div className="w-11/12 rounded border-blue-200 border-2 p-5 my-8 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
                     <a href="https://play.google.com/store/apps/details?id=com.amazonas.app" target="_blank" className="font-bold hover:underline text-blue-600 text-2xl">Amazonas Travel Mark</a>
-                    <p className="text-lg text-blue-800 pb-3 pt-2">A mobile app developed for the Regional Government of Amazonas after a public bid</p>
+                    <p className="text-lg text-blue-800 pb-3 pt-2">A mobile app developed for the Regional Government of Amazonas. I built it after winning a public bid.</p>
                     <div className="w-full flex justify-end">
                         <a href="https://play.google.com/store/apps/details?id=com.amazonas.app" target="_blank" className="rounded border-2 border-blue-500 text-blue-500 hover:bg-blue-100 px-4 py-2 text-base font-semibold transition duration-300">
                             Google Play
