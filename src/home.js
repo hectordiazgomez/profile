@@ -1,11 +1,11 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaYoutube, FaArrowRight } from "react-icons/fa"
 
 const Home = () => {
     return (
         <>
-            <div className="flex bg-gradient-to-r from-blue-100 to-blue-200">
+            <div className="flex bg-white">
                 <div className="w-1/2 2xl:w-1/3 py-10 flex justify-center">
-                    <p className="text-4xl text-blue-600 font-bold hover:text-blue-700 transition duration-300">Hector Diaz</p>
+                    <p className="text-4xl text-blue-500 font-bold hover:text-blue-700 transition duration-300">Hector Diaz</p>
                 </div>
                 <div className="2xl:w-1/4"></div>
                 <div className="w-1/2 flex justify-evenly items-center 2xl:w-1/4 py-10">
@@ -34,6 +34,22 @@ const Home = () => {
                     </a>
                     <p className="text-blue-700 text-xl font-bold pt-8">Machine Translation, Web Search & Economics</p>
                     <p className="font-semibold text-justify text-xl pt-4 leading-relaxed">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
+                    <p className="text-3xl font-bold pt-12">Media:</p>
+                </div>
+            </div>
+            <div className="flex justify-center ">
+                <div className="w-11/12 rounded border-blue-200 border-2 p-5 my-8 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="https://fb.watch/rF17c68vcY/" target="_blank" className="font-bold hover:underline text-blue-600 text-2xl">Inaugural speeach at the Palace of Government of Peru</a>
+                    <p className="text-lg text-blue-800 pb-3 pt-2">In charge of an inaugural speech for the increase of Government scholarships from 5K to 10K</p>
+                    <div className="w-full flex justify-end">
+                        <a href="https://fb.watch/rF17c68vcY/" target="_blank" className="rounded border-2 border-blue-500 flex items-center text-blue-500 hover:bg-blue-100 px-4 py-2 text-base font-semibold transition duration-300">
+                            View video <FaArrowRight className="ml-2" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="flex justify-center">
@@ -74,7 +90,7 @@ const Home = () => {
                     logo: "https://luya.blob.core.windows.net/edux/tower.svg",
                 },
             ].map((project, index) => (
-                <div key={index} className={`flex justify-center ${index % 2 === 0 ? 'bg-white' : 'bg-white'}`}>
+                <div key={index} className={`flex justify-center ${index % 2 === 0 ? 'bg-white' : 'bg-gray-100'}`}>
                     <div className="w-11/12 rounded border-blue-200 border-2 p-5 my-8 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
                         <a href={project.websiteLink} target="_blank" className="font-bold flex items-center hover:underline text-blue-600 text-2xl">
                             {project.logo && <img src={project.logo} className="w-8 h-auto mr-4" />}
@@ -82,12 +98,12 @@ const Home = () => {
                         </a>
                         <p className="text-lg text-justify text-blue-800 pb-3 pt-2">{project.description}</p>
                         <div className="w-full flex justify-end">
-                            <a href={project.websiteLink} target="_blank" className="rounded border-2 mr-5 border-blue-500 text-blue-500 hover:bg-blue-100 px-4 py-2 text-base font-semibold transition duration-300">
-                                Website
+                            <a href={project.websiteLink} target="_blank" className="rounded border-2 mr-5 flex items-center border-blue-500 text-blue-500 hover:bg-blue-100 px-4 py-2 text-base font-semibold transition duration-300">
+                                Website <FaArrowRight className="ml-2" />
                             </a>
                             {project.googlePlayLink && (
-                                <a href={project.googlePlayLink} target="_blank" className="rounded border-2 border-blue-500 text-blue-500 hover:bg-blue-100 px-4 py-2 text-base font-semibold transition duration-300">
-                                    Google Play
+                                <a href={project.googlePlayLink} target="_blank" className="rounded flex items-center border-2 border-blue-500 text-blue-500 hover:bg-blue-100 px-4 py-2 text-base font-semibold transition duration-300">
+                                    Google Play <FaArrowRight className="ml-2" />
                                 </a>
                             )}
                         </div>
