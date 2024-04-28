@@ -30,7 +30,7 @@ const Home = () => {
                         <p className="text-2xl font-bold text-blue-800">Hector Alberto Diaz Gomez</p>
                     </a>
                     <p className="text-blue-600 text-xl font-semibold pt-6">Machine Translation, Web Search & Economics</p>
-                    <p className="font-medium text-justify text-lg pt-3 leading-relaxed">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
+                    <p className=" text-justify text-gray-500 text-lg italic pt-3 leading-relaxed">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
                 </div>
             </div>
             <div className="flex justify-center">
@@ -38,13 +38,21 @@ const Home = () => {
                     <p className="text-2xl font-bold pt-10">Media:</p>
                 </div>
             </div>
-            <div className="flex justify-center ">
+            <div className="flex justify-center">
                 <div className="w-11/12 rounded border-blue-100 border-2 p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
-                    <a href="https://fb.watch/rF17c68vcY/" target="_blank" className="font-semibold hover:underline text-blue-500 text-xl">Inaugural speech at the Palace of Government of Peru</a>
-                    <p className="text-base text-blue-700 pb-2 pt-1">In charge of an inaugural speech for the increase of Government scholarships from 5K to 10K</p>
+                    <h3>
+                        <a href="https://fb.watch/rF17c68vcY/" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-blue-500 text-xl">
+                            Inaugural speech at the Palace of Government of Peru
+                        </a>
+                    </h3>
+                    <p className="text-base text-blue-700 pb-2 pt-1">
+                        Invited as a success case to speak at the inaugural speech for the increase of Government scholarships from 5,000 to 10,000.
+                    </p>
                     <div className="w-full flex justify-end">
-                        <a href="https://fb.watch/rF17c68vcY/" target="_blank" className="rounded border border-blue-400 flex items-center text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                            View video <FaArrowRight className="ml-2" />
+                        <a href="https://fb.watch/rF17c68vcY/" target="_blank" rel="noopener noreferrer" className="rounded border border-blue-400 flex items-center text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
+                            View video
+                            <span className="sr-only">Opens in a new window</span>
+                            <FaArrowRight className="ml-2" aria-hidden="true" />
                         </a>
                     </div>
                 </div>
@@ -57,7 +65,7 @@ const Home = () => {
             {[
                 {
                     title: "A language translator from Spanish into Awajun",
-                    description: "A language translator between Awajun and Spanish trained from scratch. The first version was trained using a sequence to sequence architecture, and the second model was trained using Meta NLLB. Awajun is an indigenous language spoken in northern Peru.",
+                    description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB. Awajun is an indigenous language spoken in northern Peru.",
                     websiteLink: "https://github.com/hectordiazgomez/yumi_translator",
                 },
                 {
@@ -82,7 +90,7 @@ const Home = () => {
                 },
                 {
                     title: "Babel Project",
-                    description: "Based on my experience creating a language translator, now I am creating a no code tool to train language translators from scratch just by uploading sentence pair datasets and setting some configurations.",
+                    description: "Based on my experience creating a language translator, now I am creating a no code tool to train language translators from scratch just by uploading your parallel corpus dataset and setting some configurations.",
                     websiteLink: "https://babelproject.io/",
                     logo: "https://luya.blob.core.windows.net/edux/tower.svg",
                 },
