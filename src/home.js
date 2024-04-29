@@ -65,7 +65,7 @@ const Home = () => {
             {[
                 {
                     title: "A language translator from Spanish into Awajun",
-                    description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB. Awajun is an indigenous language spoken in northern Peru.",
+                    description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB. Awajun is an indigenous language spoken in northern Peru. It will be continously improved as I gather more training data.",
                     websiteLink: "https://github.com/hectordiazgomez/yumi_translator",
                 },
                 {
@@ -90,7 +90,7 @@ const Home = () => {
                 },
                 {
                     title: "Babel Project",
-                    description: "Based on my experience creating a language translator, now I am creating a no code tool to train language translators from scratch just by uploading your parallel corpus dataset and setting some configurations.",
+                    description: "Using my experience creating a language translator from scratch with state-of-the-art neural machine translation models, Meta NLLB, I am now developing a no-code tool that allows users to train language translators by simply uploading a parallel corpus dataset and adjusting settings.",
                     websiteLink: "https://babelproject.io/",
                     logo: "https://luya.blob.core.windows.net/edux/tower.svg",
                 },
