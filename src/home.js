@@ -66,7 +66,8 @@ const Home = () => {
                 {
                     title: "A language translator from Spanish into Awajun",
                     description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB. Awajun is an indigenous language spoken in northern Peru. It will be continously improved as I gather more training data.",
-                    websiteLink: "https://github.com/hectordiazgomez/yumi_translator",
+                    githubLink: "https://github.com/hectordiazgomez/yumi_translator",
+                    huggingfaceLink: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2"
                 },
                 {
                     title: "Konlap: A cross-language search engine",
@@ -103,12 +104,24 @@ const Home = () => {
                         </a>
                         <p className="text-base text-justify text-blue-700 pb-2 pt-1">{project.description}</p>
                         <div className="w-full flex justify-end">
-                            <a href={project.websiteLink} target="_blank" className="rounded border mr-4 flex items-center border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                                Website <FaArrowRight className="ml-2" />
-                            </a>
+                            {project.websiteLink && (
+                                <a href={project.websiteLink} target="_blank" className="rounded border mr-4 flex items-center border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
+                                    Website <FaArrowRight className="ml-2" />
+                                </a>
+                            )}
                             {project.googlePlayLink && (
-                                <a href={project.googlePlayLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
+                                <a href={project.googlePlayLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300 mr-4">
                                     Google Play <FaArrowRight className="ml-2" />
+                                </a>
+                            )}
+                            {project.githubLink && (
+                                <a href={project.githubLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300 mr-4">
+                                    GitHub <FaArrowRight className="ml-2" />
+                                </a>
+                            )}
+                            {project.huggingfaceLink && (
+                                <a href={project.huggingfaceLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
+                                    Hugging Face <FaArrowRight className="ml-2" />
                                 </a>
                             )}
                         </div>
