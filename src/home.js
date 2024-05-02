@@ -66,7 +66,7 @@ const Home = () => {
                 {
                     title: "A language translator from Spanish into Awajun",
                     description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB. Awajun is an indigenous language spoken in northern Peru. It will be continously improved as I gather more training data.",
-                    githubLink: "https://github.com/hectordiazgomez/yumi_translator",
+                    githubLink: "https://github.com/hectordiazgomez/yumi_translator/blob/main/code/nllb/yumi_v2.ipynb",
                     huggingfaceLink: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2"
                 },
                 {
