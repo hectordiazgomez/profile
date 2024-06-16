@@ -42,15 +42,34 @@ const Home = () => {
                 <div className="w-11/12 rounded border-blue-100 border-2 p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
                     <h3>
                         <a href="https://fb.watch/rF17c68vcY/" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-blue-500 text-xl">
-                            Inaugural speech at the Palace of Government of Peru
+                            Speech at the Palace of Government of Peru
                         </a>
                     </h3>
-                    <p className="text-base text-blue-700 pb-2 pt-1">
-                        Invited as a success case to speak at the inaugural speech for the increase of Government scholarships from 5,000 to 10,000.
+                    <p className="text-base text-gray-700 pb-2 pt-1">
+                        Invited by president Dina Boluarte
                     </p>
                     <div className="w-full flex justify-end">
                         <a href="https://fb.watch/rF17c68vcY/" target="_blank" rel="noopener noreferrer" className="rounded border border-blue-400 flex items-center text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
                             View video
+                            <span className="sr-only">Opens in a new window</span>
+                            <FaArrowRight className="ml-2" aria-hidden="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center">
+                <div className="w-11/12 rounded border-blue-100 border-2 p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
+                    <h3>
+                        <a href="https://www.pronabec.gob.pe/descargas2024/Mayo/Libro%20-%20Testimonios%20del%20poder%20de%20la%20educacio%CC%81n.pdf#page=87" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-blue-500 text-xl">
+                            Book: Testimonies of the power of Education
+                        </a>
+                    </h3>
+                    <p className="text-base text-gray-700 pb-2 pt-1">
+                        By the Ministry of Education of Peru
+                    </p>
+                    <div className="w-full flex justify-end">
+                        <a href="https://www.pronabec.gob.pe/descargas2024/Mayo/Libro%20-%20Testimonios%20del%20poder%20de%20la%20educacio%CC%81n.pdf#page=87" target="_blank" rel="noopener noreferrer" className="rounded border border-blue-400 flex items-center text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
+                            View book
                             <span className="sr-only">Opens in a new window</span>
                             <FaArrowRight className="ml-2" aria-hidden="true" />
                         </a>
@@ -65,15 +84,9 @@ const Home = () => {
             {[
                 {
                     title: "A language translator from Spanish into Awajun",
-                    description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB. Awajun is an indigenous language spoken in northern Peru. It will be continously improved as I gather more training data.",
+                    description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB.",
                     githubLink: "https://github.com/hectordiazgomez/yumi_translator/blob/main/code/nllb/yumi_v2.ipynb",
                     huggingfaceLink: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2"
-                },
-                {
-                    title: "Konlap: A cross-language search engine",
-                    description: "Find information in +100 languages",
-                    websiteLink: "https://konlap.com/",
-                    logo: "https://konlap.com/_next/static/image/public/webstore.1d33f5319b640ab544993bbc9d4dbe50.png?imwidth=128",
                 },
                 {
                     title: "LuIA: Get ready for the Duolingo English Test",
@@ -88,12 +101,6 @@ const Home = () => {
                     websiteLink: "https://vortix.io/",
                     googlePlayLink: "https://play.google.com/store/apps/details?id=com.vortexai.mobile",
                     logo: "https://luya.blob.core.windows.net/edux/vortex_logo.png",
-                },
-                {
-                    title: "Babel Project",
-                    description: "Using my experience creating a language translator from scratch with state-of-the-art neural machine translation models, Meta NLLB, I am now developing a no-code tool that allows users to train language translators by simply uploading a parallel corpus dataset and adjusting settings.",
-                    websiteLink: "https://babelproject.io/",
-                    logo: "https://luya.blob.core.windows.net/edux/tower.svg",
                 },
             ].map((project, index) => (
                 <div key={index} className={`flex justify-center ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
