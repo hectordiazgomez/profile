@@ -84,20 +84,20 @@ const Home = () => {
             {[
                 {
                     title: "A language translator from Spanish into Awajun",
-                    description: "A language translator between Awajun and Spanish trained from scratch. I developed the first version using a sequence to sequence architecture, and the second model using Meta NLLB.",
+                    description: "A language translator between Awajun and Spanish trained from scratch. The first version was developed using a sequence to sequence architecture, and the second using Meta NLLB.",
                     githubLink: "https://github.com/hectordiazgomez/yumi_translator/blob/main/code/nllb/yumi_v2.ipynb",
                     huggingfaceLink: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2"
                 },
                 {
                     title: "LuIA: Get ready for the Duolingo English Test",
-                    description: "Trusted by tens of thousands of students worldwide to get ready for the Duolingo English Test, a low cost English certification test widely accepted worldwide.",
+                    description: "Trusted by tens of thousands of students worldwide to get ready for the Duolingo English Test.",
                     websiteLink: "https://luia.app/",
                     googlePlayLink: "https://play.google.com/store/apps/details?id=com.edux.quizui",
                     logo: "https://luya.blob.core.windows.net/edux/luialogo.png",
                 },
                 {
                     title: "Vortex",
-                    description: "An academic search engine to find, chat and extract relevant academic information from English academic sources. Breaking language barriers for non-English speakers and making academic search more interactive than ever.",
+                    description: "An academic search engine to find, chat and extract relevant academic information from English academic sources. Breaking language barriers for non-English speakers.",
                     websiteLink: "https://vortix.io/",
                     googlePlayLink: "https://play.google.com/store/apps/details?id=com.vortexai.mobile",
                     logo: "https://luya.blob.core.windows.net/edux/vortex_logo.png",
