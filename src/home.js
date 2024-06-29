@@ -1,178 +1,141 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaYoutube, FaArrowRight } from "react-icons/fa"
+import React from 'react';
+import { FaLinkedin, FaGithub, FaYoutube, FaTwitter } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import SiHuggingface from "./assets/hflogo.png"
 
 const Home = () => {
     return (
-        <>
-            <div className="flex bg-white">
-                <div className="w-1/2 2xl:w-1/3 py-6 flex justify-center">
-                    <p className="text-3xl text-blue-500 font-bold hover:text-blue-600 transition duration-300">Hector Diaz</p>
+        <div className="bg-gray-50 min-h-screen">
+            <header className="bg-white shadow-sm">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                    <h1 className="text-2xl font-bold text-blue-600">Hector Diaz</h1>
+                    <nav className="flex space-x-4">
+                        {[
+                            { icon: FaLinkedin, href: "https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216", color: "text-blue-700" },
+                            { icon: FaGithub, href: "https://github.com/hectordiazgomez", color: "text-gray-700" },
+                            { icon: FaYoutube, href: "https://www.youtube.com/@hectoralbertodiazgomez3490", color: "text-red-600" },
+                            { icon: FaTwitter, href: "https://twitter.com/HctorAlber2763?t=R6-urnekzZXFxf3jNNJsOw&s=09", color: "text-blue-400" },
+                        ].map((item, index) => (
+                            <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" className={`${item.color} hover:opacity-75 transition-opacity`}>
+                                <item.icon className="w-6 h-6" />
+                            </a>
+                        ))}
+                    </nav>
                 </div>
-                <div className="2xl:w-1/4"></div>
-                <div className="w-1/2 flex justify-evenly items-center 2xl:w-1/4 py-6">
-                    <a href="https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" target="_blank" >
-                        <FaLinkedin className="w-5 h-auto text-gray-500 cursor-pointer hover:text-blue-500 transition duration-300 transform hover:scale-110" />
-                    </a>
-                    <a href="https://github.com/hectordiazgomez" target="_blank">
-                        <FaGithub className="w-5 h-auto text-gray-500 cursor-pointer hover:text-gray-600 transition duration-300 transform hover:scale-110" />
-                    </a>
-                    <a href="https://www.youtube.com/@hectoralbertodiazgomez3490" target="_blank">
-                        <FaYoutube className="w-5 h-auto text-gray-500 cursor-pointer hover:text-red-500 transition duration-300 transform hover:scale-110" />
-                    </a>
-                    <a href="https://twitter.com/HctorAlber2763?t=R6-urnekzZXFxf3jNNJsOw&s=09" target="_blank">
-                        <FaTwitter className="w-5 h-auto text-gray-500 cursor-pointer hover:text-blue-400 transition duration-300 transform hover:scale-110" />
-                    </a>
-                </div>
-            </div>
-            <div className="flex justify-center">
-                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
-                    <a className="flex pt-10 items-center">
-                        <img src="https://luya.blob.core.windows.net/edux/hector_profile.jpeg" className="w-1/5 h-auto rounded-full mr-6 shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" />
-                        <p className="text-2xl font-bold text-blue-800">Hector Alberto Diaz Gomez</p>
-                    </a>
-                    <p className="text-blue-600 text-xl font-semibold pt-6">Machine Translation, Web Search & Economics</p>
-                    <p className=" text-justify text-gray-500 text-lg italic pt-3 leading-relaxed">Economics student at the Pontifical Catholic University of Peru. I am building different projects aimed at bridging language barriers.</p>
-                </div>
-            </div>
-            <div className="flex justify-center">
-                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
-                    <p className="text-2xl font-bold pt-10">Media:</p>
-                </div>
-            </div>
-            <div className="flex justify-center">
-                <div className="w-11/12 rounded border-blue-100 border-2 p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
-                    <h3>
-                        <a href="https://fb.watch/rF17c68vcY/" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-blue-500 text-xl">
-                            Speech at the Palace of Government of Peru
-                        </a>
-                    </h3>
-                    <p className="text-base text-gray-700 pb-2 pt-1">
-                        Invited by president Dina Boluarte
-                    </p>
-                    <div className="w-full flex justify-end">
-                        <a href="https://fb.watch/rF17c68vcY/" target="_blank" rel="noopener noreferrer" className="rounded border border-blue-400 flex items-center text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                            View video
-                            <span className="sr-only">Opens in a new window</span>
-                            <FaArrowRight className="ml-2" aria-hidden="true" />
-                        </a>
+            </header>
+
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <section className="bg-white shadow rounded-lg p-6 mb-12">
+                    <div className="flex items-center mb-6">
+                        <img src="https://luya.blob.core.windows.net/edux/hector_profile.jpeg" alt="Hector Alberto Diaz Gomez" className="w-24 h-24 rounded-full mr-6 shadow-md" />
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-900">Hector Alberto Diaz Gomez</h2>
+                            <p className="text-lg text-blue-600 font-medium">Machine Translation, Web Search & Economics</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="flex justify-center">
-                <div className="w-11/12 rounded border-blue-100 border-2 p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
-                    <h3>
-                        <a href="https://www.pronabec.gob.pe/descargas2024/Mayo/Libro%20-%20Testimonios%20del%20poder%20de%20la%20educacio%CC%81n.pdf#page=87" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline text-blue-500 text-xl">
-                            Book: Testimonies of the power of Education
-                        </a>
-                    </h3>
-                    <p className="text-base text-gray-700 pb-2 pt-1">
-                        By the Ministry of Education of Peru
+                    <p className="text-gray-600 text-lg italic leading-relaxed">
+                        Economics student at the Pontifical Catholic University of Peru. Building projects to bridge language barriers.
                     </p>
-                    <div className="w-full flex justify-end">
-                        <a href="https://www.pronabec.gob.pe/descargas2024/Mayo/Libro%20-%20Testimonios%20del%20poder%20de%20la%20educacio%CC%81n.pdf#page=87" target="_blank" rel="noopener noreferrer" className="rounded border border-blue-400 flex items-center text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                            View book
-                            <span className="sr-only">Opens in a new window</span>
-                            <FaArrowRight className="ml-2" aria-hidden="true" />
-                        </a>
+                </section>
+
+                <section className="mb-12">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Media Appearances</h2>
+                    <div className="grid gap-6 md:grid-cols-2">
+                        {[
+                            {
+                                title: "Speech at the Palace of Government of Peru",
+                                description: "Invited by president Dina Boluarte",
+                                link: "https://fb.watch/rF17c68vcY/",
+                                linkText: "View video"
+                            },
+                            {
+                                title: "Book: Testimonies of the power of Education",
+                                description: "By the Ministry of Education of Peru",
+                                link: "https://www.pronabec.gob.pe/descargas2024/Mayo/Libro%20-%20Testimonios%20del%20poder%20de%20la%20educacio%CC%81n.pdf#page=87",
+                                linkText: "View book"
+                            }
+                        ].map((item, index) => (
+                            <div key={index} className="bg-white shadow rounded-lg p-6 hover:shadow-md transition-shadow">
+                                <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
+                                <p className="text-gray-600 mb-4">{item.description}</p>
+                                <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-500 hover:text-blue-600">
+                                    {item.linkText}
+                                    <HiOutlineExternalLink className="ml-1" />
+                                </a>
+                            </div>
+                        ))}
                     </div>
-                </div>
-            </div>
-            <div className="flex justify-center">
-                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
-                    <p className="text-2xl font-bold pt-10">Stuff I make:</p>
-                </div>
-            </div>
-            {[
-                {
-                    title: "A language translator from Spanish into Awajun",
-                    description: "A language translator between Awajun and Spanish trained from scratch. The first version was developed using a sequence to sequence architecture, and the second using Meta NLLB.",
-                    githubLink: "https://github.com/hectordiazgomez/yumi_translator/blob/main/code/nllb/yumi_v2.ipynb",
-                    huggingfaceLink: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2"
-                },
-                {
-                    title: "LuIA: Get ready for the Duolingo English Test",
-                    description: "Trusted by tens of thousands of students worldwide to get ready for the Duolingo English Test.",
-                    websiteLink: "https://luia.app/",
-                    googlePlayLink: "https://play.google.com/store/apps/details?id=com.edux.quizui",
-                    logo: "https://luya.blob.core.windows.net/edux/luialogo.png",
-                },
-                {
-                    title: "Vortex",
-                    description: "An academic search engine to find, chat and extract relevant academic information from English academic sources. Breaking language barriers for non-English speakers.",
-                    websiteLink: "https://vortix.io/",
-                    googlePlayLink: "https://play.google.com/store/apps/details?id=com.vortexai.mobile",
-                    logo: "https://luya.blob.core.windows.net/edux/vortex_logo.png",
-                },
-            ].map((project, index) => (
-                <div key={index} className={`flex justify-center ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
-                    <div className="w-11/12 rounded border-blue-100 border p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
-                        <a href={project.websiteLink} target="_blank" className="font-semibold flex items-center hover:underline text-blue-500 text-xl">
-                            {project.logo && <img src={project.logo} className="w-7 h-auto mr-3" />}
-                            {project.title}
-                        </a>
-                        <p className="text-base text-justify text-blue-700 pb-2 pt-1">{project.description}</p>
-                        <div className="w-full flex justify-end">
-                            {project.websiteLink && (
-                                <a href={project.websiteLink} target="_blank" className="rounded border mr-4 flex items-center border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                                    Website <FaArrowRight className="ml-2" />
+                </section>
+
+                <section className="mb-12">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        {[
+                            {
+                                title: "Language Translator",
+                                description: "A translator between Awajun and Spanish using Meta NLLB.",
+                                link: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2",
+                                icon: SiHuggingface
+                            },
+                            {
+                                title: "LuIA",
+                                description: "Prepare for the Duolingo English Test with our trusted app.",
+                                link: "https://luia.app/",
+                                icon: "https://luya.blob.core.windows.net/edux/luialogo.png"
+                            },
+                            {
+                                title: "Vortex",
+                                description: "Academic search engine to find and chat with English sources.",
+                                link: "https://vortix.io/",
+                                icon: "https://hator.blob.core.windows.net/mywebsite/vortex_logo_latest.png"
+                            },
+                            {
+                                title: "Amazonas Travel Mark",
+                                description: "B2G Proyect: Mobile app for the Regional Government of Amazonas.",
+                                link: "https://play.google.com/store/apps/details?id=com.amazonas.app",
+                                icon: FaGithub
+                            }
+                        ].map((project, index) => (
+                            <div key={index} className="bg-white shadow rounded-lg p-6 hover:shadow-md transition-shadow">
+                                <div className="flex items-center mb-4">
+                                    {typeof project.icon === 'string' ? (
+                                        <img src={project.icon} alt={project.title} className="w-8 h-8 mr-3" />
+                                    ) : (
+                                        <project.icon className="w-8 h-8 mr-3 text-blue-500" />
+                                    )}
+                                    <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                                </div>
+                                <p className="text-gray-600 mb-4">{project.description}</p>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-500 hover:text-blue-600">
+                                    View Project
+                                    <HiOutlineExternalLink className="ml-1" />
                                 </a>
-                            )}
-                            {project.googlePlayLink && (
-                                <a href={project.googlePlayLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300 mr-4">
-                                    Google Play <FaArrowRight className="ml-2" />
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </main>
+
+            <footer className="bg-gray-800 text-white py-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex flex-col items-center">
+                        <p className="text-lg font-semibold mb-4">Let's stay in touch</p>
+                        <div className="flex space-x-6">
+                            {[
+                                { icon: FaLinkedin, href: "https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" },
+                                { icon: FaGithub, href: "https://github.com/hectordiazgomez" },
+                                { icon: FaYoutube, href: "https://www.youtube.com/@hectoralbertodiazgomez3490" },
+                                { icon: FaTwitter, href: "https://twitter.com/HctorAlber2763?t=R6-urnekzZXFxf3jNNJsOw&s=09" },
+                            ].map((item, index) => (
+                                <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">
+                                    <item.icon className="w-6 h-6" />
                                 </a>
-                            )}
-                            {project.githubLink && (
-                                <a href={project.githubLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300 mr-4">
-                                    GitHub <FaArrowRight className="ml-2" />
-                                </a>
-                            )}
-                            {project.huggingfaceLink && (
-                                <a href={project.huggingfaceLink} target="_blank" className="rounded flex items-center border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                                    Hugging Face <FaArrowRight className="ml-2" />
-                                </a>
-                            )}
+                            ))}
                         </div>
                     </div>
                 </div>
-            ))}
-            <div className="flex justify-center">
-                <div className="w-11/12 sm:w-3/5 2xl:w-5/12">
-                    <p className="text-2xl font-bold pt-10">B2G projects:</p>
-                </div>
-            </div>
-            <div className="flex justify-center ">
-                <div className="w-11/12 rounded border-blue-100 border p-4 my-6 sm:w-3/5 2xl:w-5/12 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md">
-                    <a href="https://play.google.com/store/apps/details?id=com.amazonas.app" target="_blank" className="font-semibold hover:underline text-blue-500 text-xl">Amazonas Travel Mark</a>
-                    <p className="text-base text-blue-700 pb-2 pt-1">A mobile app developed for the Regional Government of Amazonas. I built it after winning a public bid.</p>
-                    <div className="w-full flex justify-end">
-                        <a href="https://play.google.com/store/apps/details?id=com.amazonas.app" target="_blank" className="rounded border border-blue-400 text-blue-400 hover:bg-blue-50 px-3 py-1.5 text-sm font-medium transition duration-300">
-                            Google Play
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className="flex justify-center bg-gradient-to-r from-blue-50 to-blue-100">
-                <div className="py-8 w-3/4 2xl:w-1/4">
-                    <div className="flex justify-center">
-                        <p className="pb-3 text-xl font-semibold">Let's stay in touch</p>
-                    </div>
-                    <div className="flex justify-evenly">
-                        <a href="https://www.linkedin.com/in/hector-alberto-diaz-gomez-56b220216" target="_blank">
-                            <FaLinkedin className="w-5 h-auto text-gray-500 cursor-pointer hover:text-blue-500 transition duration-300 transform hover:scale-110" />
-                        </a>
-                        <a href="https://github.com/hectordiazgomez" target="_blank">
-                            <FaGithub className="w-5 h-auto text-gray-500 cursor-pointer hover:text-gray-600 transition duration-300 transform hover:scale-110" />
-                        </a>
-                        <a href="https://www.youtube.com/@hectoralbertodiazgomez3490" target="_blank">
-                            <FaYoutube className="w-5 h-auto text-gray-500 cursor-pointer hover:text-red-500 transition duration-300 transform hover:scale-110" />
-                        </a>
-                        <a href="https://twitter.com/HctorAlber2763?t=R6-urnekzZXFxf3jNNJsOw&s=09" target="_blank">
-                            <FaTwitter className="w-5 h-auto text-gray-500 cursor-pointer hover:text-blue-400 transition duration-300 transform hover:scale-110" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </>
+            </footer>
+        </div>
     );
 }
 
