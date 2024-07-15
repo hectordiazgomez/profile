@@ -5,7 +5,7 @@ import SiHuggingface from "./assets/hflogo.png"
 
 const Home = () => {
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-gray-50 min-h-screen"> 
             <header className="bg-white shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                     <h1 className="text-2xl font-bold text-blue-600">Hector Diaz</h1>
@@ -34,7 +34,7 @@ const Home = () => {
                         </div>
                     </div>
                     <p className="text-gray-600 text-lg italic leading-relaxed">
-                        Economics student at the Pontifical Catholic University of Peru. Building projects to bridge language barriers.
+                        Economics student at the Pontifical Catholic University of Peru. Emergent Ventures Fellow.
                     </p>
                 </section>
 
@@ -73,19 +73,19 @@ const Home = () => {
                         {[
                             {
                                 title: "Language Translator",
-                                description: "A translator between Awajun and Spanish using Meta NLLB.",
-                                link: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v2",
+                                description: "NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. First language translator for Spanish and Aguaruna.",
+                                link: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v3",
                                 icon: SiHuggingface
                             },
                             {
                                 title: "LuIA",
-                                description: "Prepare for the Duolingo English Test with our trusted app.",
+                                description: "Get ready for the Duolingo English Test with our app. Trusted by +30K learners.",
                                 link: "https://luia.app/",
                                 icon: "https://luya.blob.core.windows.net/edux/luialogo.png"
                             },
                             {
-                                title: "Vortex",
-                                description: "Academic search engine to find and chat with English sources.",
+                                title: "VortiX",
+                                description: "Get answers based on scientific research and data",
                                 link: "https://vortix.io/",
                                 icon: "https://hator.blob.core.windows.net/mywebsite/vortex_logo_latest.png"
                             },
