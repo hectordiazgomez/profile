@@ -25,7 +25,9 @@ const Home = () => {
                 subtitles: [],
                 links: [
                     { text: "No code tool to train low-resource languages", url: "https://github.com/hectordiazgomez/gaia_server" },
-                    { text: "Research Paper draft", url: "#" }
+                    { text: "Research Paper draft", url: "#" },
+                    { text: "Source code", url: "https://colab.research.google.com/drive/1rrUsF_seA7y9eX8X2G1CpyfqfMC4bztt" },
+                    { text: "BLEU eval", url: "https://colab.research.google.com/drive/13POtxt6SNf3moHohAzR9Jhibs9RhsmBA?usp=sharing " }
                 ],
                 extendedDescription: "Built in Partnership with the Ministry of Education of Peru. NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. First language translator for Spanish and Aguaruna."
             }
@@ -184,15 +186,15 @@ const Home = () => {
                                         <p className="text-gray-600 mb-4">{project.details.extendedDescription}</p>
                                         <div>
                                             {project.details.links.map((link, i) => (
-                                                <a
+                                                <p
                                                     key={i}
                                                     href={link.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="inline-block text-blue-500 hover:text-blue-600 mr-4"
+                                                    className="text-blue-500 underline cursor-pointer hover:text-blue-600 py-2"
                                                 >
                                                     {link.text}
-                                                </a>
+                                                </p>
                                             ))}
                                         </div>
                                     </div>
