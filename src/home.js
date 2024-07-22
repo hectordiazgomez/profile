@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { FaLinkedin, FaGithub, FaYoutube, FaTwitter } from "react-icons/fa";
 import { HiOutlineExternalLink, HiChevronDown, HiChevronUp } from "react-icons/hi";
 import SiHuggingface from "./assets/hflogo.png"
@@ -24,12 +24,35 @@ const Home = () => {
             details: {
                 subtitles: [],
                 links: [
-                    { text: "No code tool to train low-resource languages", url: "https://github.com/hectordiazgomez/gaia_server" },
-                    { text: "Research Paper draft", url: "#" },
                     { text: "Source code", url: "https://colab.research.google.com/drive/1rrUsF_seA7y9eX8X2G1CpyfqfMC4bztt" },
                     { text: "BLEU eval", url: "https://colab.research.google.com/drive/13POtxt6SNf3moHohAzR9Jhibs9RhsmBA?usp=sharing " }
                 ],
-                extendedDescription: "Built in Partnership with the Ministry of Education of Peru. NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. First language translator for Spanish and Aguaruna."
+                extendedDescription: "NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. Agreement reached with the minister of education to keep fined tuning it from December 2024 onwards since the policy to publish government academic books has just changed on June 2024 and now all academic books, for low-resource language students, will always be published in two languages: Spanish and an indigenous language, thus creating rich parallel sentences for training."
+            }
+        },
+        {
+            title: "CoolCloud",
+            description: "Deploy NodeJS and Django servers in minutes",
+            link: "https://coolcloud.app/",
+            icon: "https://coolcloud.app/favicon.ico",
+            details: {
+                links: [
+                    { text: "Website", url: "https://coolcloud.app/" },
+                    { text: "Tutorial", url: "https://colab.research.google.com/drive/13POtxt6SNf3moHohAzR9Jhibs9RhsmBA?usp=sharing " }
+                ],
+                extendedDescription: "Forget about EC2 instances, load balancers, hosted zones, etc,. and deploy with a couple of clicks"
+            }
+        },
+        {
+            title: "VortiX",
+            description: "Get answers based on scientific research and data. Selected by the Ministry of Education to empower over a million students accross Peru.",
+            link: "https://vortix.io/",
+            icon: "https://hator.blob.core.windows.net/mywebsite/vortex_logo_latest.png",
+            details: {
+                links: [
+                    { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.vortexai.mobile" }
+                ],
+                extendedDescription: "VortiX is an innovative AI-powered platform that provides answers and insights based on scientific research and data. It helps researchers, students, and professionals quickly access reliable information and make data-driven decisions."
             }
         },
         {
@@ -38,24 +61,10 @@ const Home = () => {
             link: "https://luia.app/",
             icon: "https://luya.blob.core.windows.net/edux/luialogo.png",
             details: {
-                subtitles: ["Education Technology", "Language Learning"],
                 links: [
                     { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.edux.quizui" }
                 ],
                 extendedDescription: "EduX is a comprehensive preparation platform for the Duolingo English Test. It offers practice tests, personalized study plans, and interactive lessons to help learners improve their English skills and achieve their desired scores."
-            }
-        },
-        {
-            title: "VortiX",
-            description: "Get answers based on scientific research and data",
-            link: "https://vortix.io/",
-            icon: "https://hator.blob.core.windows.net/mywebsite/vortex_logo_latest.png",
-            details: {
-                subtitles: [],
-                links: [
-                    { text: "Product Hunt", url: "#" }
-                ],
-                extendedDescription: "VortiX is an innovative AI-powered platform that provides answers and insights based on scientific research and data. It helps researchers, students, and professionals quickly access reliable information and make data-driven decisions."
             }
         },
         {
@@ -64,11 +73,6 @@ const Home = () => {
             link: "https://play.google.com/store/apps/details?id=com.amazonas.app",
             icon: FaGithub,
             details: {
-                subtitles: ["Tourism", "Government App"],
-                links: [
-                    { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.amazonas.app" },
-                    { text: "Project Overview", url: "#" }
-                ],
                 extendedDescription: "Amazonas Travel Mark is a B2G (Business-to-Government) project developed for the Regional Government of Amazonas. This mobile app serves as a comprehensive guide for tourists, showcasing the region's attractions, accommodations, and cultural experiences."
             }
         }
@@ -76,7 +80,7 @@ const Home = () => {
 
 
     return (
-        <div className="bg-gray-50 min-h-screen"> 
+        <div className="bg-gray-50 min-h-screen">
             <header className="bg-white shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                     <h1 className="text-2xl font-bold text-blue-600">Hector Diaz</h1>
@@ -104,8 +108,8 @@ const Home = () => {
                             <p className="text-lg text-blue-600 font-medium">Machine Translation, Web Search & Economics</p>
                         </div>
                     </div>
-                    <p className="text-gray-600 text-lg italic leading-relaxed">
-                        Economics student at the Pontifical Catholic University of Peru. Emergent Ventures Fellow.
+                    <p className="text-gray-600 text-lg leading-relaxed">
+                        Economics student at the Pontifical Catholic University of Peru. <a className='font-medium'>Emergent Ventures Fellow.</a>
                     </p>
                 </section>
 
@@ -141,7 +145,7 @@ const Home = () => {
                 <section className="mb-12">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                        {projects.map((project, index) => (
+                        {projects?.map((project, index) => (
                             <div key={index} className="bg-white shadow rounded-lg p-6 hover:shadow-md transition-shadow">
                                 <div className="flex items-center mb-4">
                                     {typeof project.icon === 'string' ? (
@@ -176,25 +180,18 @@ const Home = () => {
                                 </div>
                                 {expandedCards[index] && (
                                     <div className="mt-4 border-t pt-4">
-                                        <div className="mb-2">
-                                            {project.details.subtitles.map((subtitle, i) => (
-                                                <span key={i} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                                                    {subtitle}
-                                                </span>
-                                            ))}
-                                        </div>
-                                        <p className="text-gray-600 mb-4">{project.details.extendedDescription}</p>
-                                        <div>
-                                            {project.details.links.map((link, i) => (
-                                                <p
-                                                    key={i}
-                                                    href={link.url}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="text-blue-500 underline cursor-pointer hover:text-blue-600 py-2"
-                                                >
-                                                    {link.text}
-                                                </p>
+                                        <p className="text-gray-600 text-justify mb-4">{project.details.extendedDescription}</p>
+                                        <div className=''>
+                                            {project?.details?.links?.map((link, i) => (
+                                                <div>
+                                                    <a
+                                                        key={i}
+                                                        href={link.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-blue-500 underline cursor-pointer hover:text-blue-600 py-2"
+                                                    > {link.text} </a>
+                                                </div>
                                             ))}
                                         </div>
                                     </div>
