@@ -27,20 +27,20 @@ const Home = () => {
                     { text: "Source code", url: "https://colab.research.google.com/drive/1rrUsF_seA7y9eX8X2G1CpyfqfMC4bztt" },
                     { text: "BLEU eval", url: "https://colab.research.google.com/drive/13POtxt6SNf3moHohAzR9Jhibs9RhsmBA?usp=sharing " }
                 ],
-                extendedDescription: "NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. Agreement reached with the minister of education to keep fined tuning it from December 2024 onwards since the policy to publish government academic books has just changed on June 2024 and now all academic books, for low-resource language students, will always be published in two languages: Spanish and an indigenous language, thus creating rich parallel sentences for training."
+                extendedDescription: "NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. Agreement reached with the Ministry of Education of Peru to continue further fined tuning it from December 2024 onwards since the policy to publish government academic books has just changed on June 2024 and now all academic books, published for low-resource language students, will always be published in two languages: Spanish and an indigenous language, thus creating rich parallel sentences for training for 42 low-resource languages spoken in Peru."
             }
         },
         {
             title: "CoolCloud",
-            description: "Deploy NodeJS and Django servers in minutes",
+            description: "Where the simplicity of Heroku meets the cost-effectiveness of AWS",
             link: "https://coolcloud.app/",
             icon: "https://coolcloud.app/favicon.ico",
             details: {
                 links: [
                     { text: "Website", url: "https://coolcloud.app/" },
-                    { text: "Tutorial", url: "https://colab.research.google.com/drive/13POtxt6SNf3moHohAzR9Jhibs9RhsmBA?usp=sharing " }
+                    { text: "Demo", url: "https://youtu.be/9nO4jN6Q3c4?si=uNdSRVdvOqT8T7cW" }
                 ],
-                extendedDescription: "Forget about EC2 instances, load balancers, hosted zones, etc,. and deploy with a couple of clicks"
+                extendedDescription: "Deploy nodeJS servers in minutes. Forget about EC2 instances, load balancers, hosted zones, etc,. and deploy with a couple of clicks"
             }
         },
         {
@@ -52,7 +52,7 @@ const Home = () => {
                 links: [
                     { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.vortexai.mobile" }
                 ],
-                extendedDescription: "VortiX is an innovative AI-powered platform that provides answers and insights based on scientific research and data. It helps researchers, students, and professionals quickly access reliable information and make data-driven decisions."
+                extendedDescription: "VortiX is an innovative AI-powered platform that provides answers and insights based on scientific literature. It helps researchers, students, and professionals quickly access reliable information from over 220 million academic sources."
             }
         },
         {
