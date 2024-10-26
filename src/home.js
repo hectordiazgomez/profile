@@ -75,6 +75,7 @@ const Home = () => {
 
     return (
         <div className="bg-gray-50 min-h-screen"> 
+        <div className="bg-gray-50 min-h-screen"> 
             <header className="bg-white shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                     <h1 className="text-2xl font-bold text-blue-600">Hector Diaz</h1>
@@ -103,6 +104,7 @@ const Home = () => {
                         </div>
                     </div>
                     <p className="text-gray-600 text-lg italic leading-relaxed">
+                        Economics student at the Pontifical Catholic University of Peru. Emergent Ventures Fellow.
                         Economics student at the Pontifical Catholic University of Peru. Emergent Ventures Fellow.
                     </p>
                 </section>
@@ -140,6 +142,32 @@ const Home = () => {
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {projects.map((project, index) => (
+                        {[
+                            {
+                                title: "Language Translator",
+                                description: "NLLB-200-600M Fine-tuned for Aguaruna-Spanish Translation. First language translator for Spanish and Aguaruna.",
+                                link: "https://huggingface.co/hectordiazgomez/nllb-spa-awa-v3",
+                                icon: SiHuggingface
+                            },
+                            {
+                                title: "LuIA",
+                                description: "Get ready for the Duolingo English Test with our app. Trusted by +30K learners.",
+                                link: "https://luia.app/",
+                                icon: "https://luya.blob.core.windows.net/edux/luialogo.png"
+                            },
+                            {
+                                title: "VortiX",
+                                description: "Get answers based on scientific research and data",
+                                link: "https://vortix.io/",
+                                icon: "https://hator.blob.core.windows.net/mywebsite/vortex_logo_latest.png"
+                            },
+                            {
+                                title: "Amazonas Travel Mark",
+                                description: "B2G Proyect: Mobile app for the Regional Government of Amazonas.",
+                                link: "https://play.google.com/store/apps/details?id=com.amazonas.app",
+                                icon: FaGithub
+                            }
+                        ].map((project, index) => (
                             <div key={index} className="bg-white shadow rounded-lg p-6 hover:shadow-md transition-shadow">
                                 <div className="flex items-center mb-4">
                                     {typeof project.icon === 'string' ? (
