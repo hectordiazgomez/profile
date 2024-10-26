@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="">
-<Home/>
+      <Home/>
     </div>
   );
 }
