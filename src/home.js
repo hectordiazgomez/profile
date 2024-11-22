@@ -73,19 +73,19 @@ const Home = () => {
             icon: Brain,
             details: {
                 links: [
-                    { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.vortexai.mobile" }
+                    { text: "Google Play", url: "https://vortix.io/" }
                 ],
                 extendedDescription: "VortiX is an innovative AI-powered platform that provides answers and insights based on scientific literature. It helps researchers, students, and professionals quickly access reliable information from over 220 million academic sources."
             }
         },
         {
             title: "Athena",
-            description: "Free legal assistance for citizens in Peru. Athena is among the top 20 first places globally in the Digital Gamechangers Award by the United Nations Development Program.",
-            link: "https://athena-web.netlify.app/",
+            description: "Free legal assistance for citizens in Peru. Athena is among the top 20 first places globally in the Digital Gamechangers Award by the United Nations Development Programme.",
+            link: "https://atena-web.app",
             icon: Award,
             details: {
                 links: [
-                    { text: "", url: "" }
+                    { text: "", url: "https://atena-web.app" }
                 ],
                 extendedDescription: "Athena relies on Retrieval Augmented Generation to provide free legal assistance and display the sources alongside the responses."
             }
@@ -93,7 +93,7 @@ const Home = () => {
         {
             title: "EduX",
             description: "Get ready for the Duolingo English Test with our app. Trusted by +30K learners. [Discontinued]",
-            link: "https://luiaweb.netlify.app/",
+            link: "https://luia.app/",
             icon: Book,
             details: {
                 links: [
