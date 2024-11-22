@@ -54,7 +54,7 @@ const Home = () => {
             }
         },
         {
-            title: "CoolCloud",
+            title: "Fino",
             description: "A Heroku-like platform but up to 8x cheaper.",
             link: "https://coolcloud.app/",
             icon: Cloud,
